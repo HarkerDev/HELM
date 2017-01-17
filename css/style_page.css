@@ -63,22 +63,28 @@ body {
 }
 
 #left-content {
-  position: absolute;
+  position: fixed;
   top: 10%;
   left: 10%;
-  width: 40%;
-  height: 80%;
+  width: 37.5%;
+  height: 90%;
   font-family: 'EB Garamond', serif;
+  overflow: scroll;
+}
+
+#left-content img, #left-content video, #right-content img, #right-content video{
+  width: 100%;
 }
 
 #right-content {
-  position: absolute;
+  position: fixed;
   top: 10%;
   left: 50%;
-  width: 40%;
-  height: 80%;
+  width: 37.5%;
+  height: 90%;
   font-family: 'EB Garamond', serif;
   font-size: 14px;
+  overflow: scroll;
 }
 
 .content-title {
