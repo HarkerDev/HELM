@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Bentham');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+body {
+  background: #FEFEFA;
+  min-width: 5000px;
+}
+
+#header {
+	width: 100%;
+	height: 10%;
+	display: table;
+}
+
+#title {
+  font-family: 'Bentham', serif;
+  font-size: 50px;
+  color: #BDBDBD;
+  -webkit-transition: color 250ms linear;
+  -moz-transition: color 250ms linear;
+  -o-transition: color 250ms linear;
+  -ms-transition: color 250ms linear;
+  transition: color 250ms linear;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+#title:hover {
+	color: #828282;
+  -webkit-transition: color 250ms linear;
+  -moz-transition: color 250ms linear;
+  -o-transition: color 250ms linear;
+  -ms-transition: color 250ms linear;
+  transition: color 250ms linear;
+}
+
+#toc {
+
+}
+
+#left-wrapper {
+	float: left;
+	height: 90%;
+	width: 5%;
+  display: table;
+}
+
+#left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  cursor: pointer;
+}
+
+#right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  cursor: pointer;
+}
+
+#left-content {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 40%;
+  height: 80%;
+  font-family: 'EB Garamond', serif;
+}
+
+#right-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 40%;
+  height: 80%;
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+}
+
+.content-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content-author {
+  font-size: 18px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+}
+
+#footer a {
+	color: black;
+	text-decoration: underline;
+}
+
+.site-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
