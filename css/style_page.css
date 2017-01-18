@@ -5,11 +5,11 @@
 
 body {
   background: #FEFEFA;
-  min-width: 5000px;
+  min-width: 500px;
 }
 
 #header {
-	width: 100%;
+	width: 20%;
 	height: 10%;
 	display: table;
 }
@@ -37,17 +37,6 @@ body {
   transition: color 250ms linear;
 }
 
-#toc {
-
-}
-
-#left-wrapper {
-	float: left;
-	height: 90%;
-	width: 5%;
-  display: table;
-}
-
 #left-arrow {
   position: absolute;
   top: 50%;
@@ -63,28 +52,48 @@ body {
 }
 
 #left-content {
-  position: fixed;
-  top: 10%;
+  position: absolute;
+  top: 15%;
   left: 10%;
   width: 37.5%;
-  height: 90%;
+  height: 85%;
   font-family: 'EB Garamond', serif;
   overflow: scroll;
 }
 
-#left-content img, #left-content video, #right-content img, #right-content video{
+#left-content img, #left-content video, #right-content img, #right-content video, #full-content img, #full-content video{
   width: 100%;
 }
 
 #right-content {
-  position: fixed;
-  top: 10%;
+  position: absolute;
+  top: 15%;
   left: 50%;
   width: 37.5%;
-  height: 90%;
+  height: 85%;
   font-family: 'EB Garamond', serif;
   font-size: 14px;
   overflow: scroll;
+}
+
+#full-content {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 85%;
+  font-family: 'EB Garamond', serif;
+  overflow: scroll;
+}
+
+#text-overlay {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  font-family: 'EB Garamond', serif;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
 }
 
 .content-title {
@@ -98,6 +107,7 @@ body {
 
 #footer {
 	position: absolute;
+  background-color: #EEEEEA;
 	bottom: 0%;
 	right: 0%;
 }
