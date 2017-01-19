@@ -7,7 +7,6 @@ var PAGE_MATCHER = /p\d{1,2}/
 var HOME_
 
 function getPageNumber(href) {
-    console.log(href);
     return parseInt(PAGE_MATCHER.exec(href)[0].substring(1));
 }
 
@@ -39,7 +38,6 @@ document.addEventListener("keydown", function(event) {
 var maxHeight = 400;
 $(function(){
     $(".dropdown > li").hover(function() {
-        console.log("dropdown");
          var $container = $(this),
              $list = $container.find("ul"),
              $anchor = $container.find("a"),
