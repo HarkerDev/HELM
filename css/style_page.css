@@ -112,6 +112,10 @@ body {
   font-size: 18px;
 }
 
+.content-medal {
+  font-size: 16px;
+}
+
 #footer {
 	position: absolute;
   background-color: #EEEEEA;
