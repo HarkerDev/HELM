@@ -11,7 +11,9 @@ function getPageNumber(href) {
 }
 
 document.addEventListener("keydown", function(event) {
+    console.log(event.keyCode);
     switch(event.keyCode) {
+        pageNumberCurr = getPageNumber(window.location.href);
         case KEY_LEFT: 
             if (pageNumberCurr != 1) {
                 pageNumberNew = pageNumberCurr - 1;
