@@ -1,23 +1,29 @@
-var NUM_PAGES = 13;
+var NUM_PAGES = 14;
 
 var KEY_LEFT = 37;
 var KEY_RIGHT = 39;
 
-var PAGE_MATCHER = /p\d{1,2}/
-var HOME_
+var PAGE_MATCHER = /(p\d{1,2}|welcome)/;
 
 function getPageNumber(href) {
-    return parseInt(PAGE_MATCHER.exec(href)[0].substring(1));
+    var res = PAGE_MATCHER.exec(href)[0];
+    if (res == "welcome") return 0; 
+    else return parseInt(res.substring(1));
 }
 
 document.addEventListener("keydown", function(event) {
     switch(event.keyCode) {
         case KEY_LEFT: 
             pageNumberCurr = getPageNumber(window.location.href);
-            if (pageNumberCurr != 1) {
+            if (pageNumberCurr != 0) {
                 pageNumberNew = pageNumberCurr - 1;
-                pageNumberNewStr = ((pageNumberNew < 10) ? "0" : "") + pageNumberNew;
-                window.location.href = "https://harkerdev.github.io/helm/pages/p" + pageNumberNewStr + ".html";
+                if (pageNumberNew == 0) {
+                    window.location.href = "./welcome.html";
+                }
+                else {
+                    pageNumberNewStr = ((pageNumberNew < 10) ? "0" : "") + pageNumberNew;
+                    window.location.href = "./p" + pageNumberNewStr + ".html";
+                }
             }
         break;
         case KEY_RIGHT:
@@ -25,7 +31,7 @@ document.addEventListener("keydown", function(event) {
             if (pageNumberCurr != NUM_PAGES) {
                 pageNumberNew = pageNumberCurr + 1;
                 pageNumberNewStr = ((pageNumberNew < 10) ? "0" : "") + pageNumberNew;
-                window.location.href = "https://harkerdev.github.io/helm/pages/p" + pageNumberNewStr + ".html";
+                window.location.href = "./p" + pageNumberNewStr + ".html";
             }
         break;
     }

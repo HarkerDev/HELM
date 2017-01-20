@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bentham');
-@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 body {
   background: #FEFEFA;
@@ -61,6 +60,14 @@ body {
   -ms-transition: background-color 250ms linear;
   transition: background-color 250ms linear;
   text-decoration: none;
+}
+
+#picture-credit {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
 }
 
 #footer {
